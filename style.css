@@ -1,0 +1,360 @@
+/*
+Theme Name:     Really Wild Flowers
+Theme URI:      http://chrisbishop.me.uk/
+Description:    Child theme for the Twenty Twelve theme 
+Author:         Chris Bishop
+Author URI:     http://chrisbishop.me.uk/
+Template:       twentytwelve
+Version:        0.1.0
+License: Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* Site-wide */
+
+body.custom-background {background: url(images/bg.png) top repeat-x;}
+#comments, .nav-single, .entry-meta, .site-description, .imageName {display:none;}
+.site {background:transparent;}
+h1, .main-navigation li a {font-family:"Times New Roman",Georgia,Serif;color:#5170BE;}
+h2, h3, h4 {color:#5170BE;}
+a, a:visited, .entry-content a:visited, .comment-content a:visited, .widget-area .widget a:visited {color:#5170BE;}
+.entry-header .entry-title {font-size:2rem;}
+p, ul, ol, dl, blockquote, .post-statement, .statement, h1, h2, h3, #quote {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+img.alignleft {margin-top:0;}
+.site-content article {border:0;}
+hr {border:2px dotted #ccc;
+    border-style:none none dotted;
+    color:#FFF;
+    background:#FFF;
+}
+.fr_search_widget .ctr_search .txt_livesearch {background-color: transparent !important;}
+
+.entry-content table, .comment-content table {color:#444;}
+
+/* @end */
+
+/* =Header
+-------------------------------------------------------------- */
+
+h1.site-title a, h1.site-title a:hover {color:transparent;height:90px;}
+.site-header {min-height:180px;padding:30px 0 0 0;background: url(images/header1.png) top repeat-x;}
+.site-header h1 {background: url(images/logo.png) left top no-repeat;height:110px;}
+
+/* =Menu
+-------------------------------------------------------------- */
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {border:0;}
+.main-navigation {margin-top:20px;min-height:50px;}
+.main-navigation ul.nav-menu {border:0;min-height:50px;}
+.main-navigation li {margin:0 1px 0 0;}
+.main-navigation li a {width:90px;height:40px;padding:5px 10px;border-top-left-radius:5px;border-top-right-radius:5px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #cfdefd 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cfdefd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#cfdefd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#cfdefd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#cfdefd 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#cfdefd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfdefd',GradientType=0 ); /* IE6-9 */
+}
+.main-navigation .current-menu-item > a, .main-navigation .current_page_item > a {background:#fff;}
+
+@media screen and (max-width:599px) {
+	.main-navigation li {
+		width: 100%;
+		padding: 5px;
+		background: linear-gradient(to bottom, #ffffff 0%,#cfdefd 100%);
+	}
+	.main-navigation li a {
+		width: 100%;
+		padding: 5px 30px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+	.main-navigation ul.nav-menu {
+		width:100%;
+		}
+}
+
+/* =Sidebar
+-------------------------------------------------------------- */
+
+.simple-section-nav {
+	padding:14px;
+	background:#f0f3ff;
+	color:#5170BE;
+	border-radius:9px;
+}
+.widget_wpsc_shopping_cart {
+	padding:14px;
+	background:#f3f3f3;
+	border-radius:9px;
+}
+.widget_nav_menu {
+	padding:14px;
+	background:#f3f3f3;
+	border-radius:9px;
+}
+.widget_wpsc_live_search {
+	padding:14px;
+	background:#f3f3f3;
+	border-radius:9px;
+}
+.widget_recent_entries {
+	padding:14px;
+	background:#f0f3ff;
+	color:#5170BE;
+	border-radius:9px;
+}
+.widget-area .widget a {color:#5170BE;text-decoration:none;}
+.widget-area .widget a:hover {color:#000;}
+.widget-area .widget h3 {font-size:16px;color:#5170BE;}
+.widget-area .widget {margin-bottom:16px;}
+.widget-area .widget_rss a
+{
+target-name:new;
+target-new:tab;
+}
+
+/* =Home
+-------------------------------------------------------------- */
+
+.post-12 h1.entry-title {font-size:2.571428571rem;}
+.home .entry-content .home-block {vertical-align:text-top;}
+.home-block {
+	display:inline-block;
+	border-radius:9px;
+	width:21%;
+	margin-top: 20px;
+	margin-right:4%;
+	box-shadow: 3px 3px 5px #ccc;
+	min-height: 190px;
+	border:solid 1px #cfdefd;
+	background:#f0f3ff;
+background: -moz-linear-gradient(top,  #ffffff 0%, #f0f3ff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f0f3ff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f0f3ff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f0f3ff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f0f3ff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f0f3ff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f3ff',GradientType=0 ); /* IE6-9 */
+}
+
+@media screen and (max-width:640px) {
+	.home-block {
+		width:100%;
+		margin-top: 20px;
+		margin-right:0;
+		min-height: 100px;
+	}
+}
+.last {margin-right:0;}
+.home-block h3 {margin:18px 14px;}
+.home-block p {margin:14px;}
+
+/* =Catlist
+-------------------------------------------------------------- */
+
+.lcp_catlist {list-style-type: none;padding: 0px;margin:10px 0px;}
+.lcp_catlistitem {
+	margin:10px 0 30px 0;
+	padding:14px;
+	background:#f3f3f3;
+	border-radius:9px;}
+
+.lcp_catlistitem h3 a {
+text-decoration: none;
+}
+.lcp_catlistitem h3.lcp_catlisttitle {
+font-family: "Times New Roman",Georgia,Serif;
+font-size: 24px;
+margin:0 0 20px 0;
+}
+
+/* =Product
+-------------------------------------------------------------- */
+
+.latinName {color:#3C5082;margin: 0 0 1.714285714rem;line-height: 1.714285714;}
+.shortDesc {font-weight:bold;margin: 0 0 1.714285714rem;line-height: 1.714285714;clear:both;}
+.longDesc, .product_description {clear:both;}
+.imagecol {overflow:hidden !important;}
+.pfricedisplay, .shipping, .additional_description_container, .edit-link {display:none;}
+.product_grid_item {width:150px;height:305px;}
+.wpsc-breadcrumbs {margin:10px 0;font-size:75%;}
+.wpsc_categories li {vertical-align:middle;}
+a.wpsc_product_title {text-decoration:none;}
+
+.wpsc_product_price, .cb_quantity, .wpsc_buy_button_container, .cb_unit {float:left;display:inline;}
+.wpsc_quantity_update {width:100px;}
+.productcol fieldset {width:30%;display:inline;}
+.pricedisplay {line-height:2;}
+.cb_unit {font-size:85%;margin-top:14px;width:100px;font-weight:bold;}
+.default_product_display form.product_form fieldset legend, #content .default_product_display form.product_form fieldset legend {font-size:100%;margin-top:8px;}
+.default_product_display {border-bottom: 2px dotted #ccc;}
+#custom_fields h3, .custom_meta, .single_additional_description, #content .default_product_display .wpsc_variation_forms table tr td.col1 {display:none;}
+#custom_fields {width:50%;float:right;}
+.wpsc_additional_description {width:50%;float:right;font-weight:bold;margin-bottom:14px;}
+
+.cb_quantity_price_add {clear:both;
+padding-top: 12px;
+border-top: 2px dotted #ccc;
+border-bottom: 2px dotted #ccc;
+margin-bottom: 12px;
+}
+.cb_quantity {width:200px;display:inline-block;padding: 5px;}
+#content input.wpsc_buy_button {padding: 5px 12px !important;}
+
+.single_product_display {border-top:2px dotted #ccc;padding: 10px 0;}
+
+table.wpsc_cf-table td {padding: 0;border:0;}
+table.wpsc_cf-table {border:0;}
+
+.currentprice {font-weight:bold;}
+
+.cb_product_option {width: 50%;float: right;clear: both;margin-bottom: 10px;}
+.cb_product_form {margin-top: 10px;}
+
+.st_sharethis {clear:both;margin-bottom:10px;}
+
+.entry-header img {display:none;}
+
+.wpsc_also_bought_item span.pricedisplay {display:none;}
+.wpsc_also_bought_item {
+display: inline-block;
+margin-right: 10px;
+height: 151px;
+overflow: hidden;
+}
+
+.wpsc_categories .Services {display:none;}
+
+/* =Product Categories
+-------------------------------------------------------------- */
+
+.wpsc_category_link {font-size: 1.285714286rem;line-height: 1.6;font-weight:bold;}
+.wpsc_categories li img {float: left;margin-right: 14px;}
+.wpsc_categories li {clear: both;min-height: 150px;margin: 0 0 14px 0;list-style-type:none;padding-bottom:10px;border-bottom: 2px dotted #ccc;}
+.wpsc_categories li ul {display:none;}
+.wpsc_categories li a {text-decoration:none;}
+#default_products_page_container .wpsc_category_details img {width:148px;height:148px;float:left;margin: 0 14px 14px 0;}
+#default_products_page_container .wpsc_category_details {min-height:148px;margin-bottom:14px;line-height: 1.4em;padding-bottom:10px;border-bottom: 2px dotted #ccc;}
+h2.cattitle {margin:0;clear:none;}
+.xSpecifications {display:none;}
+
+.product_view_865 form.product_form {display:none;}
+.post-865 .cb_quantity_price_add {display:none;}
+
+.cb_reg_form {width:45%;}
+p.login-submit {margin-top:10px;}
+
+.cart_message {font-size:12px;}
+
+.wpsc_categories .wpsc_subcategory {
+margin-left: 162px;
+}
+
+li.hiden {display:none !important;}
+
+.widget-area .wpsc_categories li {min-height:45px;border:0;margin:0;}
+
+/* =Images
+-------------------------------------------------------------- */
+
+img.noshadow {box-shadow:none;}
+
+
+/* =Shopping cart
+-------------------------------------------------------------- */
+
+.cartformbox {
+	padding:14px;
+	background:#f3f3f3;
+	border-radius:9px;
+}
+#checkout_page_container .total_price td.wpsc_totals {padding-bottom:9px;font-size:18px;background-color:#f0f3ff;color:#5170BE;}
+#content input.wpsc_buy_button {background: #5170BE;color: #fff;}
+.visitshop, .grav-hashed {display:none;}
+
+td.wpsc_billing_forms h4, .entry-content table.table-2 {margin:0;}
+
+.custom_gateway {
+	font-size: 16px;
+	line-height: 26px;
+	padding: 12px 0;
+}
+
+.sagepay .custom_gateway_name {font-weight:bold;}
+
+
+/* =Enquire form.wpsc_pe {margin-bottom:24px;}
+-------------------------------------------------------------- */
+
+/* #cboxMiddleLeft, #cboxMiddleRight, #cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight {display:none;}
+#colorbox {height: 488px !important;}
+#cboxWrapper {height: 458px !important;}
+#cboxContent {height: 420px !important;background: transparent;}
+#cboxLoadedContent {height: 420px !important;background: transparent;}
+#inline_content {border: 1px solid #ccc;}
+#cboxTitle {display:none !important;} */
+#toggleText h3.prodtitles {margin-bottom: 22px;}
+#toggleText .row {margin: 7px 0;}
+#toggleText .row label {width: 150px;display: inline-block;}
+#toggleText {margin-bottom:12px;}
+#toggleText input[type="submit"] {padding: 7px 14px !important;}
+
+/* ---------------------- lightbox ----------------------------- */
+#lightbox{
+	background-color:#eee;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url('/_assets/img/overlay.png');
+
+/* =Footer
+-------------------------------------------------------------- */
+
+
+/* ===[ Footer Widget Areas ]=== */
+.site-info { clear: both; }
+#footer-widgets {
+    width: 100%;
+    border-top: none;
+}
+    #footer-widgets .widget li { list-style-type: none; }
+.template-front-page #footer-widgets { padding-top: 0; }
+@media screen and (min-width: 600px) { 
+    #footer-widgets.four .widget {
+        float: left;
+        margin-right: 3%;
+        width: 20%;
+        clear: none;
+	padding: 5px;
+    }
+        #footer-widgets.four .widget + .widget + .widget + .widget { margin-right: 0; background: url('images/footer_bot.png')  no-repeat right top; min-height: 360px; width: 25%; }
+}
+/* for IE8 and IE7 */
+.ie #footer-widgets.four .widget {
+    float: left;
+    margin-right: 3%;
+    width: 20%;
+    clear: none;
+    padding: 5px;
+}
+.ie #footer-widgets.four .widget + .widget + .widget + .widget { margin-right: 0; width: 25%; }
+
