@@ -36,7 +36,7 @@
 
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner" style="background: url(http://www.reallywildflowers.co.uk/wp-content/themes/reallywildflowers/images/header<?php echo(rand(1,5)); ?>.png) top repeat-x;">
+	<header id="masthead" class="site-header" role="banner" style="background: url(<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/reallywildflowers/images/header<?php echo(rand(1,5)); ?>.png) top repeat-x;">
 
 		<hgroup>
 
