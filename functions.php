@@ -1,10 +1,14 @@
 <?php
 
-
+function rw_styles() {
+    wp_register_style( 'parent-styles', get_template_directory_uri() . '/style.css', array(), '3.3.7', 'all' );
+    wp_register_style( 'child-styles', get_stylesheet_directory_uri() . '/style.css', array(), 1.0, 'all' );
+    wp_enqueue_style( 'parent-styles' );
+    // wp_enqueue_style( 'child-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'rw_styles' );
 
 //Allow html in category description
-
-
 
 $filters = array('pre_term_description', 'pre_link_description', 'pre_link_notes', 'pre_user_description');
 
