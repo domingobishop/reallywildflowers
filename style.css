@@ -9,7 +9,7 @@ Version:        0.1.0
 License: Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
 */
 
-@import url("../twentytwelve/style.css");
+/* @import url("../twentytwelve/style.css"); */
 
 /* Site-wide */
 
@@ -324,7 +324,7 @@ td.wpsc_billing_forms h4, .entry-content table.table-2 {margin:0;}
 #lightbox img{ border: none; clear: both;} 
 #overlay img{ border: none; }
 
-#overlay{ background-image: url('/_assets/img/overlay.png');
+#overlay{ background-image: url('images/overlay.png'); }
 
 /* =Footer
 -------------------------------------------------------------- */
@@ -346,7 +346,10 @@ td.wpsc_billing_forms h4, .entry-content table.table-2 {margin:0;}
         clear: none;
 	padding: 5px;
     }
-        #footer-widgets.four .widget + .widget + .widget + .widget { margin-right: 0; background: url('images/footer_bot.png')  no-repeat right top; min-height: 360px; width: 25%; }
+	#footer-widgets.four .widget + .widget + .widget + .widget {
+		margin-right: 0;
+		min-height: 360px;
+		width: 25%; }
 }
 /* for IE8 and IE7 */
 .ie #footer-widgets.four .widget {
@@ -358,3 +361,6 @@ td.wpsc_billing_forms h4, .entry-content table.table-2 {margin:0;}
 }
 .ie #footer-widgets.four .widget + .widget + .widget + .widget { margin-right: 0; width: 25%; }
 
+.wpsc_also_bought_item {
+	float: left;
+}

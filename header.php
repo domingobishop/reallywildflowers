@@ -1,12 +1,6 @@
 ﻿<?php
 /**
  * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
  */
 ?>
 <!DOCTYPE html>
@@ -36,7 +30,7 @@
 
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner" style="background: url(http://www.reallywildflowers.co.uk/wp-content/themes/reallywildflowers/images/header<?php echo(rand(1,5)); ?>.png) top repeat-x;">
+	<header id="masthead" class="site-header" role="banner" style="background: url(<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/reallywildflowers/images/header<?php echo(rand(1,5)); ?>.png) top repeat-x;">
 
 		<hgroup>
 
