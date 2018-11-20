@@ -364,3 +364,17 @@ td.wpsc_billing_forms h4, .entry-content table.table-2 {margin:0;}
 .wpsc_also_bought_item {
 	float: left;
 }
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.shopping-cart-sum {
+	padding: 0.2em 0.5em;
+	float: right;
+	border: 1px solid #5170BE;
+	border-radius: 4px;
+	color: #5170BE;
+}
