@@ -96,3 +96,22 @@ register_sidebar( array(
 	'before_title' => '<h3 class="widget-title">',
 	'after_title' => '</h3>',
 ) );
+
+register_sidebar( array(
+    'name' => __( 'Shop Sidebar Widget', 'tto' ),
+    'id' => 'sidebar-8',
+    'description' => __( 'Right Shop Sidebar.', 'tto' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => "</aside>",
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+) );
+
+
+function search_shortcode( $atts )
+{
+    $ps_echo = false ;
+    if ( function_exists( 'wpsc_search_widget' ) ) wpsc_search_widget( $ps_echo );
+}
+
+add_shortcode( 'p-search', 'search_shortcode' );

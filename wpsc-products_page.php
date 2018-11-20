@@ -5,6 +5,7 @@ $image_width = get_option('product_image_width');
  * Most functions called in this page can be found in the wpsc_query.php file
  */
 ?>
+
 <div id="default_products_page_container" class="wrap wpsc_container">
 
 <?php wpsc_output_breadcrumbs(); ?>
@@ -22,6 +23,14 @@ $image_width = get_option('product_image_width');
 
 			</div><!--close wpsc_categories-->
 	  <?php else:?>
+            <div class="p-search clearfix">
+                <h4>Search products</h4>
+                <?php
+                $ps_echo = true ;
+                if ( function_exists( 'wpsc_search_widget' ) ) wpsc_search_widget( $ps_echo );
+                ?>
+            </div>
+            <h4>Browse products</h4>
 			<ul class="wpsc_categories">
 
 				<?php wpsc_start_category_query(array('category_group'=>get_option('wpsc_default_category'), 'show_thumbnails'=> get_option('show_category_thumbnails'))); ?>

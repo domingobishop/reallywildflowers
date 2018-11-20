@@ -22,7 +22,6 @@
 				</div><!-- #footer-widgets -->
 		<?php endif; ?>
 		<div class="site-info">
-			<img src="https://www.rapidssl.com/assets/shared/images/rapidssl_ssl_certificate.gif">
 			<?php do_action( 'twentytwelve_credits' ); ?>
 			&copy;2014. All rights reserved. |	
 			<a href = "http://www.reallywildflowers.co.uk/accessibility-statement/" accesskey="0" title="Help using this website [Alt+0]">Accessibility Statement</a> |	
